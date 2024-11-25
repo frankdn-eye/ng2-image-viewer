@@ -326,7 +326,7 @@ To lint all `*.ts` files:
 $ npm run lint
 ```
 
-# Packing
+# Pack and Deploy to MyGet
 Make sure you built it first:
 ```bash
 $ yarn build
