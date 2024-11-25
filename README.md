@@ -1,4 +1,4 @@
-## Welcome to Ng2-Image Viewer
+## Welcome to Ng2-Image Viewer (**forked and maintained by Eyelation**)
 <section>
     <p>This component uses the <a href="http://ignitersworld.com/lab/imageViewer.html">Image Viewer JS</a> in it's core.</p>
     <p>Ng2-Image Viewer uses MIT license, so you can use it as you wish, feel free to help contributing with the code.</p>
@@ -31,16 +31,6 @@
 ## Upgrading from prior to 3.0
 <p>Take a look at this <a href="https://github.com/brenoprata10/ng2-image-viewer/wiki/Upgrading-from-versions-prior-to-3.0">quick tutorial</a>!
 
-## Donate:
-<section>
-
-<p>You can donate on my Patreon!</p>
-
-<p>
-<a href="https://www.patreon.com/brenoprata">My Patreon o/</a>
-</p>
-
-</section>
 
 <h3>Demo:</h3>
 <section>
@@ -303,7 +293,7 @@ Now just add the these codes on your angular-cli.json file:
 
 ```json
 "styles": [
-    "../node_modules/ng2-image-viewer/imageviewer.scss"
+    "node_modules/@eyelation/ng2-image-viewer/imageviewer.scss"
 ],
 ```
 
@@ -319,51 +309,10 @@ Once your library is imported, you can use its components, directives and pipes 
 [loadOnInit]="true"></app-image-viewer>
 ```
 
-## Changelog
-
-<h4>- Next versions spoilers:</h4>
-<ul>
-    <li> Some design changes</li>
-    <li> Smart preview on container</li>
-    <li> Better button adjustment on mobile devices</li>
-</ul>
-
-<h4>- 3.0:</h4>
-<ul>
-    <li> No longer uses Jquery!</li>
-    <li> Uses iv-viewer as peerDependency</li>
-    <li> Now the viewer uses the version 2.0 from <a href="http://ignitersworld.com/lab/imageViewer.html">Image Viewer JS</a>, which is faster and fixes some bugs!</li>
-</ul>
-
-
-<h4>- 2.0:</h4>
-<ul>
-    <li> Better performance</li>
-    <li> Smarter scaling when image overflows the container when rotated</li>
-    <li> Added support to URL images</li>
-    <li> Added Zoom in and Zoom out buttons</li>
-    <li> Added support to open url images in new tabs</li>
-    <li> Added tooltip label for url images in new tabs</li>
-</ul>
-
-<h4>- 1.0.9:</h4>
-<ul>
-    <li>Increased performance</li>
-    <li>Fix bug when rotating images</li>
-    <li>Added tooltips</li>
-    <li>Added input to hide tooltips</li>
-    <li>Added input to costumize tooltips labels</li>
-    <li>Added new button: Show PDF only</li>
-    <li>Added new input to hide showPDFOnly button</li>
-    <li>Some design changes</li>
-</ul>
-<h4>- 1.0.8:</h4>
-<ul>
-    <li>Added two event emitters(OnNext and OnPrevious)</li>
-    <li>Adjust on the smart scale when rotating</li>
-</ul>
-
 ## Development
+
+Please note that this package uses `yarn` instead of `npm` as a Node.js package manager. <br/>
+Please refer to this: [Yarn Home Page](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
 
 To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 
@@ -377,6 +326,36 @@ To lint all `*.ts` files:
 $ npm run lint
 ```
 
+# Packing
+Make sure you built it first:
+```bash
+$ yarn build
+```
+or
+```bash
+npm run build
+```
+
+To pack the package:
+```bash
+$ cd dist
+$ npm pack
+```
+
+
+We need to login in our feed:
+```bash
+$ npm adduser --registry=https://www.myget.org/F/eyelation-public/npm/
+```
+provide username and password (search for myget in keeper)
+
+
+now publish:
+```bash
+$ npm publish --registry=https://www.myget.org/F/eyelation-public/npm/
+```
+
+
 ## License
 
-MIT © [brenoprata10](mailto:brenoprata10@gmail.com)
+MIT © [eyelation](mailto:dev@eyelation.com)

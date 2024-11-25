@@ -10,5 +10,11 @@
     ],
     "skipLibCheck": true,
     "types": []
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "integration",
+    "dist"
+  ]
 }
