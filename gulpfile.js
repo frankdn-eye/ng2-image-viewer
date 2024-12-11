@@ -125,7 +125,7 @@ gulp.task('rollup:umd', function () {
       // The name to use for the module for UMD/IIFE bundles
       // (required for bundles with exports)
       // See "name" in https://rollupjs.org/#core-functionality
-      name: 'ng2-image-viewer',
+      name: '@eyelation/ng2-image-viewer',
 
       // See "globals" in https://rollupjs.org/#core-functionality
       globals: {

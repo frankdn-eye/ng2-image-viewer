@@ -22,7 +22,7 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "ng2-image-viewer.js",
-    "flatModuleId": "ng2-image-viewer"
+    "flatModuleId": "@eyelation/ng2-image-viewer"
   },
   "files": [
     "./index.ts"
